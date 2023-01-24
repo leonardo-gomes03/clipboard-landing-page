@@ -26,9 +26,18 @@
     .sec-description p{
         max-width: 250px;
     }
-    .logos-img{
-        display: flex;
-        flex-direction: row;
+    .logos{
+        padding: 5rem 0;
+    }
+    .logos-img {
+        flex-direction: row !important;
+        margin: 0 22vw;
+    }
+    .imgs{
+        height: auto !important;
+        width: 10% !important;
+        aspect-ratio: 3/2;
+        object-fit: contain;
     }
 
 }
@@ -141,20 +150,23 @@ img {
 
 .body-text-3 {
     text-align: center;
-    margin: 5vh 5%;
+    margin: 5vh 2%;
 }
 
 .body-text-3 h2 {
     font-size: 28px;
-    margin: 5vh auto;
+    margin-bottom: 2vh;
 }
-
+.body-text-3 p{
+    margin-bottom: 6vh;
+}
 .body-text-4 {
     text-align: center;
 }
 
 .body-text-4 h2 {
     font-size: 30px;
+    margin-top: 15vh;
     margin-bottom: 2vh;
 }
 
@@ -175,18 +187,22 @@ img {
 .sec-description div {
     margin: 6vh auto;
 }
+.logos{
+    margin-top: 15vh ;
+    margin-bottom: 20vh ;
+}
 
-.logos {
+.logos-img {
     display: flex;
     flex-direction: column;
     gap: 8vh;
     text-align: center;
 }
 
-.logos img {
+.logos-img img {
     margin: 0 auto;
     width: 40%;
-    max-width: 200px;
+    max-width: 130px;
 }
 
 .endpage {
@@ -199,8 +215,11 @@ img {
     font-size: 28px;
     margin: 2vh auto;
 }
-
+.endpage p{
+    margin-bottom: 6vh;
+}
 .footer {
+    margin-top: 25vh;
     text-align: center;
     margin-bottom: 0;
     background-color: #eee;
