@@ -1,111 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
 
-@media screen and (min-width: 450px) {
-
-    .body-content-1,
-    .main-content,
-    .body-text-3,
-    .body-text-4,
-    .endpage,
-    .sec-description {
-        padding: 0 25%;
-    }
-
-    .body-text-1 p {
-        max-width: 75% !important;
-    }
-
-    .uiui123 {
-        max-width: 22vw;
-    }
-
-    .body-text-2 {
-        display: flex;
-        margin-left: 15%;
-    }
-
-    .body-text-2 p,
-    .body-text-2 h3 {
-        text-align: left;
-    }
-
-    .body-text-2 img {
-        max-width: 40%;
-    }
-
-    .body-text-4 {
-        margin-top: 0vh;
-    }
-
-    .sec-description {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 !important;
-    }
-
-    .sec-description p {
-        max-width: 300px;
-    }
-
-    .logos {
-        padding: 5rem 0;
-        margin-top: 8vh !important;
-        margin-bottom: 12vh !important;
-    }
-
-    .logos-img {
-        flex-direction: row !important;
-        margin: 0 22vw;
-    }
-
-    .imgs {
-        height: auto !important;
-        width: 10% !important;
-        aspect-ratio: 3/2;
-        object-fit: contain;
-    }
-
-    .footer {
-        display: flex;
-        flex-wrap: wrap !important;
-        align-items: center;
-        align-content: center;
-        justify-content: space-around;
-        min-height: 10vh;
-    }
-
-    .footer-img {
-        width: 70px;
-        margin: 0 !important;
-    }
-
-    .footer-img img {
-        margin-top: 0px !important;
-    }
-    .footer .list{
-        position: absolute;
-        margin: auto !important;    
-    }
-
-    .footer .list  ul{
-        display: flex !important;
-        flex-wrap: wrap;
-    }
-    .footer .list ul li{
-        margin-left: 2rem !important;
-        transform: translateY(100%)
-    }
-
-    .footer .list-icon {
-        display: inline-block !important;
-        padding-bottom: 0 !important;
-        margin: 0 !important;
-    }
-    .footer .list-icon img{
-        margin-left: 2rem !important;
-    }
-}
 
 * {
     padding: 0;
@@ -137,7 +31,11 @@ h3 {
 section {
     margin-bottom: 10vh;
 }
-
+.main-content{
+    background-image: url("images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .main-content .logo {
     text-align: center;
     padding: 60px;
@@ -326,4 +224,108 @@ img {
     justify-content: space-between;
     padding-bottom: 3vh;
     margin: 0 30%;
+}
+@media screen and (min-width: 450px) {
+
+    .body-content-1,
+    .main-content,
+    .body-text-3,
+    .body-text-4,
+    .endpage,
+    .sec-description {
+        padding: 0 25%;
+    }
+    .main-content{
+        background-image: url("images/bg-header-desktop.png");
+    }
+    .body-text-1 p {
+        max-width: 75% ;
+    }
+
+    .uiui123 {
+        max-width: 22vw;
+    }
+
+    .body-text-2 {
+        display: flex;
+        margin-left: 15%;
+    }
+
+    .body-text-2 p,
+    .body-text-2 h3 {
+        text-align: left;
+    }
+
+    .body-text-2 img {
+        max-width: 40%;
+    }
+
+    .body-text-4 {
+        margin-top: 0vh; 
+    }
+
+    .sec-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 ;
+    }
+
+    .sec-description p {
+        max-width: 300px;
+    }
+
+    .logos {
+        padding: 5rem 0;
+        margin-top: 8vh ;
+        margin-bottom: 12vh ;
+    }
+
+    .logos-img {
+        flex-direction: row ;
+        margin: 0 22vw;
+    }
+
+    .imgs {
+        height: auto ;
+        width: 10% ;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+    .endpage p{
+        max-width: 100%;
+        padding: 0 10%;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        min-height: 3vh;
+    }
+    .footer-img{
+        margin: auto
+    }
+    .footer-img img{
+        margin: 3vh auto;
+    }
+    .footer .list-icon{
+        margin: auto;
+        padding: 0;
+        
+    }
+    .footer .list li{
+        display: inline-block;
+        margin: auto;
+        margin-left: 3rem;
+    }
+    .footer .list-icon img{
+        margin-left: 3rem;        
+    }
+    .footer .list-icon img:hover{
+        filter: saturate(10px);  
+    }
+    .footer div{
+        margin: auto
+    }
 }
